@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const authRouter = require("./routes/auth");
 
-db.connect();
+// db.connect();
 
 var app = express();
 
