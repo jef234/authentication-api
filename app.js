@@ -7,7 +7,7 @@ var logger = require('morgan');
 // const db = require("./helpers/database");
 
 var indexRouter = require('./routes/index');
-// var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/users');
 // const authRouter = require("./routes/auth");
 
 // db.connect();
@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-// app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 // app.use("/", authRouter)
 // app.get('/', function(req, res) {
 //   // res.json({message: err.message, error: err});
