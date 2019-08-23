@@ -6,9 +6,9 @@ var logger = require('morgan');
 
 // const db = require("./helpers/database");
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-const authRouter = require("./routes/auth");
+// var indexRouter = require('./routes/index');
+// var usersRouter = require('./routes/users');
+// const authRouter = require("./routes/auth");
 
 // db.connect();
 
