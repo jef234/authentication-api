@@ -8,7 +8,7 @@ const db = require("./helpers/database");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-//const authRouter = require("./routes/auth");
+const authRouter = require("./routes/auth");
 
 db.connect();
 
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-// app.use("/", authRouter);
+app.use("/", authRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
