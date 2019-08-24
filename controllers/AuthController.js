@@ -1,6 +1,12 @@
 const User = require("../models/User")
 
 exports.login = (req, res) => {
+    console.log("body:");
+    console.log(req.body);
+    console.log("email:");
+    console.log(req.body.email);
+    console.log("password:");
+    console.log(req.body.password);
     User.findOne({email:req.body.email})
     .then(user => {
         if(user && user.comparePassword(req.body.password)){
