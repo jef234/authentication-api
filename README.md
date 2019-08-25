@@ -1,5 +1,5 @@
-# Task-Organizer-api
-task organizer api using Node Express and Mongo db hosted in Heroku.
+# Authentication-API
+Authentication API using Node Express and Mongo db hosted in Heroku.
 
 Auth modules uses bcrypt for encrypting user passwords.
 
