@@ -2,12 +2,12 @@
 task organizer api using Node Express and Mongo db hosted in Heroku
 Auth modules uses bcrypt for encrypting user passwords
 
-#APIs
+# APIs
 
-#Register
+# Register
 Link: https://task-organizer-api.herokuapp.com/register
 Keys: name, email and password
 
-#Login
+# Login
 Link: https://task-organizer-api.herokuapp.com/login
 Keys: email and password
